@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+wait=`git add $1`
+echo "Done git add"
+out=`git commit -m 'update'`
+echo "Done git commit"
+result=`git push`
+echo "Done git push"
